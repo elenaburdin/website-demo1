@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&display=swap');
+
+:root {
+    --gap: 20;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+}
+
+#main-header {
+    background-color: #252422;
+    padding: 12px;
+    border-bottom: 3px solid #eb5e28;
+
+
+}
+
+header a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 17px;
+    color: #fffcf2;
+
+}
+
+header li {
+    list-style: none;
+    margin-left: 15px;
+    padding-left: 25px;
+}
+
+header ul {
+    display: flex;
+    margin-right: 15px;
+}
+
+header .current a {
+    color: #eb5e28;
+}
+
+header a:hover {
+    color: #ccc5b9;
+}
+
+#showcase {
+    background-image: url('./img/main-image.jpg');
+    height: 80vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+}
+
+.ntext {
+    position: absolute;
+    top: 45%;
+    text-align: center;
+    width: 100%;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #252422;
+}
+
+.ntext p {
+    font-size: 15px;
+}
+
+#cources {
+    margin-top: 25px;
+}
+
+#cources .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5%;
+    align-items: center;
+    text-align: center;
+    width: 75%;
+    margin: auto;
+}
+
+#cources p {
+    font-size: 15px;
+}
+
+#cources a {
+    text-decoration: none;
+    /* background-color: #ccc5b9; */
+    color: #eb5e28;
+    font-weight: 700;
+    /* padding: 8px 25px; */
+}
+
+#cources a:hover {
+    color: #252422;
+}
+
+#main-footer {
+    text-align: center;
+    margin-top: 85px;
+    background-color: #252422;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.social-media {
+    margin: 10px;
+}
+
+.social-media a {
+    margin: 2px;
+    color: #ccc5b9;
+}
+
+.follow h3 {
+    color: #ccc5b9;
+}
+
+
+@media (max-width: 650px) {
+    #cources .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 15px;
+        color: #fffcf2;
+
+    }
+}
